@@ -160,7 +160,8 @@
   * @{
   */
 #define BQ_CTRL2_DLY_DIS       (1U << 7)  /*!< Disable OCD/SCD delay        */
-#define BQ_CTRL2_CC_EN         (1U << 5)  /*!< Coulomb counter enable       */
+#define BQ_CTRL2_CC_EN         (1U << 6)  /*!< Coulomb counter continuous-mode enable (datasheet SLUSBK2I Table 8-8) */
+#define BQ_CTRL2_CC_ONESHOT    (1U << 5)  /*!< Single 250-ms CC reading; auto-clears on completion */
 #define BQ_CTRL2_DSG_ON        (1U << 1)  /*!< Discharge FET on             */
 #define BQ_CTRL2_CHG_ON        (1U << 0)  /*!< Charge FET on                */
 /** @} */
